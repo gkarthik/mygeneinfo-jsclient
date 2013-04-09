@@ -1,6 +1,7 @@
 #Simple Client for mygene.info in javascript.
 
-Right now I only included a very simple query. Should expand further to specify other parameters such as limit as well.
+The client is right now only processing a simple query of the form http://mygene.info/query?q=*query*.
+Should expand further to specify other parameters such as limit as well.
 
 Library for pretty view used is prettyPrint.js. 
 Github repo - <https://github.com/padolsey/prettyPrint.js>
