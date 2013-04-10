@@ -29,11 +29,11 @@ Then simply call the functions in your javascript file.
 
 Function queries and retrieves JSON from http://mygene.info/ which can be stored or manipulated in a callback function.
 
-query - The query statement. Syntax available at <http://mygene.info/>
+*query* - The query statement. Syntax available at <http://mygene.info/>
 
-limit - The number of rows to be retrieved.
+*limit* - The number of rows to be retrieved.
 
-callback - A call back function which is used to manipulate or store data retrieved
+*callback* - A call back function which is used to manipulate or store data retrieved
 
 Example
 
@@ -46,11 +46,11 @@ Example
 
 Function queries and retrieves JSON from http://mygene.info/ and directly displays the raw JSON in a container of your choice.
 
-query - The query statement. Syntax available at <http://mygene.info/>
+*query* - The query statement. Syntax available at <http://mygene.info/>
 
-limit - The number of rows to be retrieved.
+*limit* - The number of rows to be retrieved.
 
-container_id - The ID of the HTML element to show the raw JSON in.
+*container_id* - The ID of the HTML element to show the raw JSON in.
 
 Example
 
@@ -64,11 +64,11 @@ Example
 
 Function queries and retrieves JSON from http://mygene.info/ and displays a pretty version of the JSON in a container of your choice.
 
-query - The query statement. Syntax available at <http://mygene.info/>
+*query* - The query statement. Syntax available at <http://mygene.info/>
 
-limit - The number of rows to be retrieved.
+*limit* - The number of rows to be retrieved.
 
-container_id - The ID of the HTML element to show the raw JSON in.
+*container_id* - The ID of the HTML element to show the raw JSON in.
 
 Example
 
