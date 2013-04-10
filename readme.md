@@ -17,8 +17,9 @@ jQuery 1.9.1
 #Implementation
 Include the jQuery library and mygeneinfo.js in the head tag. 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="mygeneinfo.js"></script>
+	:::coffeescript
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="mygeneinfo.js"></script>
 
 Then simply call the functions in your javascript file.
 
@@ -32,11 +33,12 @@ query - The query statement. Syntax available at <http://mygene.info/>
 limit - The number of rows to be retrieved.
 callback - A call back function which is used to manipulate or store data retrieved
 
-Example:
+Example
 
-mygeneinfo.getJSON(query_text,20,function(data){
-	var foo = data;//data is the JSON object retrieved.
-});
+	:::coffeescript
+	mygeneinfo.getJSON(query_text,20,function(data){
+		var foo = data;//data is the JSON object retrieved.
+	});
 
 ##mygeneinfo.printJSON(query,limit,container_id);
 
@@ -46,12 +48,13 @@ query - The query statement. Syntax available at <http://mygene.info/>
 limit - The number of rows to be retrieved.
 container_id - The ID of the HTML element to show the raw JSON in.
 
-Example:
+Example
 
-<script>
-mygeneinfo.printJSON(query_text,20,"content");
-</script>
-<div id="content"></div>
+	:::coffeescript
+	<script>
+		mygeneinfo.printJSON(query_text,20,"content");
+	</script>
+	<div id="content"></div>
 
 ##mygeneinfo.printPrettyJSON(query,limit,container_id);
 
@@ -61,11 +64,12 @@ query - The query statement. Syntax available at <http://mygene.info/>
 limit - The number of rows to be retrieved.
 container_id - The ID of the HTML element to show the raw JSON in.
 
-Example:
+Example
 
-<script>
-mygeneinfo.printPrettyJSON(query_text,20,"content");
-</script>
-<div id="content"></div>
+	:::coffeescript
+	<script>
+		mygeneinfo.printPrettyJSON(query_text,20,"content");
+	</script>
+	<div id="content"></div>
 
 Check out demo code at <http://gkarthik.net/csb/geneinfo-jsclient/>.
