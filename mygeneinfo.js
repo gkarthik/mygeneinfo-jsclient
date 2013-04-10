@@ -1,3 +1,11 @@
+/*
+ * My Gene Info Js Library.
+ * Used for simple querying using REST services from http://mygene.info/
+ AUTHOR gkarthik (http://gkarthik.net/)
+ VERSION 0.1
+ UPDATED 10-04-2013
+*/
+
 var mygeneinfo = (function(){
 	return {
 		getJSON: function(query_text,limit,callback){
