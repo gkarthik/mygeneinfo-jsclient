@@ -17,7 +17,6 @@ jQuery 1.9.1
 #Implementation
 Include the jQuery library and mygeneinfo.js in the head tag. 
 
-:::javascript
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="mygeneinfo.js"></script>
 
@@ -34,7 +33,7 @@ limit - The number of rows to be retrieved.
 callback - A call back function which is used to manipulate or store data retrieved
 
 Example:
-:::javascript
+
 mygeneinfo.getJSON(query_text,20,function(data){
 	var foo = data;//data is the JSON object retrieved.
 });
@@ -48,7 +47,7 @@ limit - The number of rows to be retrieved.
 container_id - The ID of the HTML element to show the raw JSON in.
 
 Example:
-:::javascript
+
 <script>
 mygeneinfo.printJSON(query_text,20,"content");
 </script>
@@ -63,7 +62,7 @@ limit - The number of rows to be retrieved.
 container_id - The ID of the HTML element to show the raw JSON in.
 
 Example:
-:::javascript
+
 <script>
 mygeneinfo.printPrettyJSON(query_text,20,"content");
 </script>
