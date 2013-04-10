@@ -76,7 +76,15 @@
 </style>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="prettyprint.js"></script>
+<script src="mygeneinfo.js"></script>
 <script src="script.js"></script>
+<script>
+$(document).ready(function(){
+		//mygeneinfo.getJSON("CDK2",20,function(data){console.log(data)});
+		//mygeneinfo.printJSON("CDK2",20,"content");
+		//mygeneinfo.printPrettyJSON("CDK2",20,"content");
+});
+</script>
 <body>
 	<table>
 	<tr><td>Query</td><td><input type="text" id="input-main" /></td></tr>
@@ -85,8 +93,8 @@
 	<ul id="menu">
 		<li id="pretty-json">Pretty JSON</li>
 		<li id="raw-json">Raw JSON</li>
+		<li id="pretty-extlib-json">Pretty JSON with external library</li>
 	</ul>
 	<div id="content">Enter your query in the text box.<br />The client is right now only processing a simple query of the form http://mygene.info/query?q=*query*.</div>
 </body>
-
 </html>
