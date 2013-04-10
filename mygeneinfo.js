@@ -9,17 +9,41 @@
 var mygeneinfo = (function(){
 	return {
 		getJSON: function(query_text,limit,callback){
+			if(!limit)
+			{
+				console.log("Specify Limit.");
+			}
+			if(!callback)
+			{
+				console.log("No callback function specified.");
+			}
 			$.getJSON("http://mygene.info/query?q="+query_text+"&limit="+limit+"&callback=gene_padding", function(data){
 				callback(data);
 		});
 		},
 		printJSON: function(query_text,limit,element_id){
+			if(!limit)
+			{
+				console.log("Specify Limit.");
+			}
+			if(!element_id)
+			{
+				console.log("No element ID specified.");
+			}
 			$("#"+element_id).html("Loading...");
 			$.getJSON("http://mygene.info/query?q="+query_text+"&limit="+limit+"&callback=gene_padding", function(data){
 				$("#"+element_id).html(syntaxHighlight(data));
 			});
 		},
 		printPrettyJSON: function(query_text,limit,element_id){
+			if(!limit)
+			{
+				console.log("Specify Limit.");
+			}
+			if(!element_id)
+			{
+				console.log("No element ID specified.");
+			}
 			$("#"+element_id).html("Loading...");
 			$.getJSON("http://mygene.info/query?q="+query_text+"&limit="+limit+"&callback=gene_padding", function(data){
 				var json = JSON.stringify(data, null, 2);
@@ -34,7 +58,6 @@ function syntaxHighlight(json) {
          json = JSON.stringify(json, undefined, 2);
     }
     json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    console.log(json);
     return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
         var cls = 'number';
         if (/^"/.test(match)) {
